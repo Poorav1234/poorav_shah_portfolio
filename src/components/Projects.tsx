@@ -43,13 +43,23 @@ const projects: Project[] = [
     id: 3,
     title: "Woodland Wonders",
     description: "A multi-vendor e-commerce website in PHP where sellers can sell furniture and customers can purchase from multiple vendors.",
-    image: <FaChartBar className="text-4xl text-purple-400" />,
+    image: <FaChartBar className="text-4xl text-purple-400" />, 
     tags: ["PHP", "MySQL", "E-commerce", "Multi-Vendor", "Furniture", "Online Shopping"],
     liveUrl: "#",
     githubUrl: "https://github.com/Ansh-Ice/WoodLand-Wonder-The-ECommerce-Website",
     hasDemoAlert: true
+  },
+  {
+    id: 4,
+    title: "News App with AI Integration",
+    description: "iOS news application featuring US-based news and stock market details with AI-powered analysis and insights. Provides real-time financial data visualization and personalized news recommendations.",
+    image: <FaMobile className="text-4xl text-purple-400" />, 
+    tags: ["iOS", "Swift", "AI Integration", "Financial Data", "News API", "Stock Market Analysis", "Real-time Updates"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Poorav1234/NewsApp-",
+    hasDemoAlert: true
   }
-]
+];
 
 function ProjectCard({ project }: { project: Project }) {
   const [showAlert, setShowAlert] = useState(false);
