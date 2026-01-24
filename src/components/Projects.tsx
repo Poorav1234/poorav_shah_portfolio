@@ -58,6 +58,16 @@ const projects: Project[] = [
     liveUrl: "#",
     githubUrl: "https://github.com/Poorav1234/NewsApp-",
     hasDemoAlert: true
+  },
+  {
+    id: 5,
+    title: "Restaurant Management System",
+    description: "Desktop-based restaurant management application built in C# with support for multiple user roles including owner, chef, waiter, manager, and guest.",
+    image: <FaChartBar className="text-4xl text-purple-400" />, 
+    tags: ["C#", "Desktop Application", "Multi-user System", "Role-based Access", "Restaurant Management", "Database"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Poorav1234/Restaurant-Management-System",
+    hasDemoAlert: true
   }
 ];
 
