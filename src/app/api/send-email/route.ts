@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
 
     // Try to send email via nodemailer
     let emailSent = false;
-    
+
     if (process.env.EMAIL_USER && process.env.EMAIL_APP_PASSWORD) {
       try {
         // Create transporter using environment variables
@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         // Email content
         const mailOptions = {
           from: process.env.EMAIL_USER,
-          to: 'pooravshah123@gmail.com',
+          to: 'poorav.software.dev@gmail.com',
           subject: `Portfolio Contact: Message from ${name}`,
           html: `
             <h2>New Contact Form Submission</h2>
@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json(
-      { 
+      {
         message: 'Message received successfully!',
         emailSent
       },

@@ -33,7 +33,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
@@ -42,16 +42,16 @@ export default function Contact() {
         },
         body: JSON.stringify(formData),
       })
-      
+
       if (response.ok) {
         const result = await response.json();
         // Reset form and show success message
         setFormData({ name: '', email: '', message: '' })
         setShowSuccess(true);
-        
+
         // Log the result
         console.log('Email result:', result);
-        
+
         // Hide success message after 3 seconds
         setTimeout(() => {
           setShowSuccess(false);
@@ -102,14 +102,14 @@ export default function Contact() {
             <h3 className="text-3xl font-bold mb-6 text-white">
               Let's Build Something <span className="gradient-text">Amazing</span> Together
             </h3>
-            
+
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Ready to transform your ideas into reality? Whether you need a web application, 
+              Ready to transform your ideas into reality? Whether you need a web application,
               software development, or technology consultation, I'm here to help bring your vision to life.
             </p>
-            
+
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I specialize in creating secure, scalable solutions that drive innovation 
+              I specialize in creating secure, scalable solutions that drive innovation
               and deliver exceptional user experiences. Let's collaborate to build amazing projects.
             </p>
 
@@ -123,10 +123,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-white font-medium">LeetCode</p>
-                    <p className="text-gray-400">300+ DSA Problems Solved</p>
+                    <p className="text-gray-400">450+ DSA Problems Solved</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 glass rounded-lg flex items-center justify-center">
                     <span className="text-orange-400 font-bold">HR</span>
@@ -147,10 +147,10 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-400">pooravshah123@gmail.com</p>
+                  <p className="text-gray-400">poorav.software.dev@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 glass rounded-lg flex items-center justify-center">
                   <FaMapMarkerAlt className="text-purple-400" />
@@ -256,7 +256,7 @@ export default function Contact() {
                 Message sent successfully!
               </motion.div>
             )}
-            
+
             {showError && (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}

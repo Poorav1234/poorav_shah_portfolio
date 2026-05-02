@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo */}
-          <motion.div 
+          <motion.div
             className="text-2xl font-bold gradient-text mb-4 md:mb-0"
             whileHover={{ scale: 1.05 }}
           >
